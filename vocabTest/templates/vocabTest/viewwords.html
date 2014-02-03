@@ -1,0 +1,10 @@
+<title>Master Word List</title>
+<h1>WORD LIST</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{% for i in words %}
+	{{ i.word }}: {{ i.definition }} <br>
+{% endfor %}
+
+<a href='/projects/vocabtest'>back</a>

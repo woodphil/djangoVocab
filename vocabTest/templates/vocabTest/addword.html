@@ -1,0 +1,13 @@
+<h1>add a word!</h1>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+{% if add_message %}<p><strong>{{ add_message }}</strong></p>{% endif %}
+<form action="{% url 'addwordform2' %}" method = "post">
+	{% csrf_token %}
+	<label for="word">Word:</label><br>
+	<input type="text" name="word" id="word"><br>
+	<label for="definition">Definition:</label><br>
+	<textarea cols="40" rows="5" name="definition" id="definition"></textarea>
+	<br>
+	<input type='submit' value="Submit"/>
+</form>
+<a href='/projects/vocabtest'>back</a>

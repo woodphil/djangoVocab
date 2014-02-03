@@ -1,0 +1,117 @@
+body
+{
+		margin: 0 auto;
+		background: #424239 url('../img/header-bg.png') repeat scroll 0 0;
+
+}
+
+header
+{
+	width: 100%;
+	margin: 0;
+}
+
+#header-bg
+{
+	display: block;
+	height: 100%;
+	top: 0;
+	width: 100%;
+	background: #424239 url('../img/header-bg.png') repeat scroll 0 0;
+}
+
+#banner
+{
+	display: block;
+	width: 400px;
+	margin-top: 0.5em;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#banner-img
+{
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navigation
+{
+	margin: 0 70px;
+	background: #2b3a6b;
+}
+
+#content
+{
+	margin: 0 70px;
+	height: 1200px;
+}
+
+#content p
+{
+	padding: 1.5em 3em;
+}
+
+
+nav.menu
+{
+	height: 100%;
+	border-color: #000000;
+	margin: 0 auto;
+}
+
+ul.menu-list
+{
+	list-style-type: none;
+	padding: 1em;
+	margin: 0em 0em;
+	text-align: center;
+}
+
+li.menu-item
+{
+	display: inline;
+	margin: 0em 1.5em;
+	padding: 1em 0em;
+}
+
+a.menu-item-link
+{
+	font-family: 'Exo 2', sans-serif, "Arial", sans-serif;
+	font-size: 1.3em;
+	text-decoration: none;
+	position: relative;
+	color: #cccfd8;
+	}
+	
+a.menu-item-link:hover
+{
+	color: #ffffff;
+}
+
+
+
+	
+
+
+#container
+{
+	background: #424239 url('../img/main-bg.png') repeat-y scroll 0 0;
+	max-width: 720px;
+	position: relative;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0;
+}
+
+
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

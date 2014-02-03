@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>VOCAB QUIZ!</title>
+</head>
+
+<body>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<a href='{% url "full-quiz" %}'>start quiz!</a>
+<a href='{% url "problematic-quiz" %}'>start quiz with words you suck at!</a>
+<a href='{% url "addword" %}'>add a word!</a>
+<a href='{% url "viewwords" %}'>view words!</a>
+</body>

@@ -1,0 +1,47 @@
+{% extends "portfolioSite/base.html" %}
+
+{% block content %}
+<h2>Resume</h2>
+<p>A pdf copy of this information is available here</p>
+<h3>Education</h3>
+<ul class='resume-list'>
+	<li class='resume-item'><strong>Brown University</strong>, Providence, RI	                                   		   Aug 2013</li>
+		<ul class='resume-sub-list'>
+			<li class='resume-sub-item'><strong>Concentration</strong>: BSc. Computational Biology; GPA: 3.3/4.0	         </li>           
+			<li class='resume-sub-item'><strong>Relevant Coursework</strong>: Computational Probability and Statistics, Computational Molecular Biology, Inferences in Genomics and Molecular Biology, Algorithmic Foundations of Computational Biology, Programming with Data Structures and Algorithms</li>
+		</ul>
+</ul>
+<h3>Research Experience</h3>
+<ul class='resume-list'>
+	<li class='resume-item'>
+	Biology and Gender Studies Lab of Prof. Anne Fausto-Sterling, Providence, RI	 Sep 2011-Sep 2013</li>
+	<li class='resume-item'>Research Assistant    </li>
+	<ul class='resume-sub-list'>
+		<li class='resume-sub-item'>
+		•	Explored whether or not mothers inherently preferred certain interactions with their children based on gender</li>
+		<li class='resume-sub-item'>
+		•	Used MATLAB and SPSS to conduct statistical analysis methods such as t-tests, ANOVA and Chi-square to first discover significant maternal behaviors. </li>
+		<li class='resume-sub-item'>
+		•	Subsequently applied visualization techniques to the data in MATLAB to present these findings in a more comprehensible form</li>
+		<li class='resume-sub-item'>
+		•	Used the GUIDE toolbox to create a user-friendly interface that allowed coworkers unfamiliar with MATLAB to generate the same meshes and scatterplots; user interface additionally optimized the visualization process by around 300%</li>
+		<li class='resume-sub-item'>
+		•	The research conducted is pending publication within the next year</li>
+	</ul>
+
+	<li class='resume-item'>
+	Computational Biology Lab of Prof. Daniel Weinreich, Providence, RI		Jan 2013-May 2013</li>
+	<li class='resume-item'>
+	Research Assistant</li>
+	<ul class='resume-sub-list'>
+		<li class='resume-sub-item'>
+		•	Investigated epistatic interactions (how one gene affects the expression of another) between three or more loci, focusing on S. Cerevisiae and E. coli. Dealt with the challenge of collecting data from potentially thousands of specimens by using simulations</li>		
+		<li class='resume-sub-item'>
+		•	Modeled simulations of 10000 generations of cells on a Linux cluster with a mathematical method known as Flux Balance Analysis (FBA)</li>
+		<li class='resume-sub-item'>
+		•	Implemented existing models available from bioscience databases and also created models using the Systems Biology Markup Language (SBML) format. Specifically used MATLAB’s COBRA toolbox to read in model data and perform simulations</li>
+		<li class='resume-sub-item'>
+		•	Simulated knockout mutations and collected the results in the form of an epistatic matrix. Analyzed data by using Kishony’s Prism algorithm to try and discern relationships between multiple genes. Results found conflicted with the results obtained by Kishony et al. and warranted further research</li>
+	</ul>
+</ul>
+{% endblock %}

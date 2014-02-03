@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+{% load staticfiles %}
+<head>
+	<meta charset = 'UTF8'/>
+	<meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+	<title>Phil Park's Online Portfolio</title>
+	<link rel = 'stylesheet' href = "{% static 'portfolioSite/css/reset.css' %}" type = 'text/css' />
+	<!--<link rel = 'stylesheet' href = 'css/unsemantic-grid-responsive-tablet.css' type = 'text/css'  -->
+	<link rel = 'stylesheet' href = "{% static 'portfolioSite/css/common.css' %}" type = 'text/css' />
+	<link rel = 'stylesheet' href = "{% static 'portfolioSite/css/responsive.css' %}" type = 'text/css' />
+	
+	
+	<!-- ICON Hide this line for IE (needed for Firefox and others) -->
+	<![if !IE]>
+	<link rel="icon" href="{% static 'portfolioSite/img/favicon.ico' %}" type="image/x-icon" />
+	<![endif]>
+	<!-- This is needed for IE -->
+	<link rel="shortcut icon" href="{% static 'portfolioSite/img/favicon.ico' %}" type="image/ico" />
+	
+	<!-- FONT SHEETS -->
+	<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id='container'>
+		<header>
+			<div id='banner'>
+				<img id = 'banner-img' src="{% static 'portfolioSite/img/banner.png' %}" alt='Phil Park'>
+			</div>
+			<div id='navigation'>
+				<nav class = 'menu clearfix'>
+					<ul class = 'menu-list'>
+						<li class = 'menu-item'><a class = 'menu-item-link' href='/'>home</a></li>
+						<li class = 'menu-item'><a class = 'menu-item-link' href='/resume'>resume</a></li>
+						<li class = 'menu-item'><a class = 'menu-item-link' href='/projects'>projects</a></li>
+						<li class = 'menu-item'><a class = 'menu-item-link' href='/contact'>contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id='content'>
+			{% block content %}
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue eros, tempor a est ullamcorper, ultrices scelerisque mauris. Sed tempus, magna in varius mollis, orci metus adipiscing urna, quis semper quam risus a ante. Aenean vel turpis lorem. Proin pellentesque, enim ut semper tristique, nisi nibh gravida nunc, egestas aliquet tellus arcu sit amet dolor. Morbi eget venenatis sapien. Donec commodo, lectus nec elementum sodales, nisl odio convallis metus, vitae congue neque est sit amet purus. Pellentesque vestibulum nisl elit, at tincidunt dolor aliquet eget. Donec arcu nunc, fringilla a aliquet ac, iaculis nec enim. Ut id odio dolor. 
+			{% endblock %}
+		</div>
+		<footer>
+			<p> 
+				Phil Park. All rights reserved. Copyright &copy; 2013.
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
