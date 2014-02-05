@@ -2,5 +2,8 @@
 
 {% block content %}
 <p>HELLO PROJECTS</p>
-<p><a href = '/projects/vocabtest/'>VOCAB TEST</a>
+<h2><a href = '/projects/vocabtest/'>VOCAB TEST</a><br></h2>
+<p>A semi-random GRE vocabulary quizzer developed in Django. The user is presented with a word and 5 definitions to choose from. This application goes beyond simple pseudo-random generation of choices in two ways: 1. Past mistakes are remembered and the incorrect choices made then will appear again. 2. When words are added to the database, they are cross-referenced to the rest of the dictionary to calculate the respective levenhstein distances. If a distance meets a certain threshold, the 2 words are linked together, ex: palliate and vacillate. The answer choices will include definitions from linked words where applicable, thus trying to confuse the user into guessing incorrect words based on similarity. Additionally, VOCABTEST keeps track of what words the user struggles with and provides the option of testing only these words.</p> <br>
+<h2>Daily Data Tabulator</h2>
+<p>PHP application designed for internal use at TrexQuant. Collects financial data continuously and provides users with updated information from Bloomberg pertaining to stocks of interest. Additionally calculates several important measures such as Positional and Execution Profit and Loss. Implements jQuery and a modified tablesorter application for easier organization of data. Planned features include dynamic plotting of stocks and total profits as well as more precise tracking of individual stocks. Source code is not available due to proprietary reasons.</p>
 {% endblock %}
